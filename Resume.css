@@ -1,0 +1,75 @@
+#cv-form{
+	background: url("C:/Users/Rahul Computer/Downloads/resume-1.jpg");
+	background-repeat: no-repeat;
+	
+}
+
+#cv-form{
+	display: visible;
+}
+
+img{
+	border-radius: 50px;
+	width: 150px;
+	height: 90px;
+	box-shadow: 4px 4px 4px 2px white;
+	margin-left: 60px;
+	margin-top: 20px;
+}
+#mobile{
+	margin-left: 150px;
+	margin-top: 27px;
+}
+
+#message{
+	margin-left: 150px;
+}
+
+#left-part{
+	background-color: #151B54;
+	color:white;
+
+}
+
+#ww{
+	background-color: #151B54;
+  color: white;
+  padding: 6px;
+}
+
+#right-part{
+	
+	background-color: #E0FFFF;
+	
+	
+}
+
+#cv-btn{
+	margin-top: 14px;
+	margin-left: 470px;
+	margin-bottom: 14px;
+}
+
+#tp-btn{
+	margin-top: 14px;
+	margin-left: 470px;
+	margin-bottom: 14px;
+	background-color: #151B54;
+	color: white;
+	border-radius: 5px;
+}
+
+.card-body{
+	background-color: #E0FFFF;
+
+}
+
+a{
+	margin-left: 130px;
+	justify-content: space-around
+}
+
+#tp-form{
+
+	display: none;
+}

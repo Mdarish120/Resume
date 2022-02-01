@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume Generator</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<meta charset="utf-8">
+	 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Resume.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container-fluid"  id="cv-form">	
+<h2     data-aos="slide-down"class="text-center mt-3">Resume Generator</h2>
+<p       data-aos="zoom-in" class="text-center mt-1">Make your goal easy</p>
+  <div class="row">	
+<div class="col-md-6">
+	<h2       data-aos="slide-right">Personal Info..</h2>
+<div class="form-group">	
+<label><b>Your Name</b></label>
+<input   id="name" type="text" name=""  class="form-control"  placeholder="Enter your name">
+</div>
+<div class="form-group">	
+<label><b>Your Phone</b></label>
+<input  id="phone" type="text" name=""  class="form-control"  placeholder="Enter here">
+</div>
+
+<div class="form-group">	
+<label><b>Email Address</b></label>
+<input id="email" type="text" name=""  class="form-control"  placeholder="Enter here">
+</div>
+
+
+<div class="form-group">	
+<label><b>Post</b></label>
+<input  id="post" type="text" name=""  class="form-control"  placeholder="Enter here">
+</div>
+
+<div class="form-group">	
+<label><b>Upload Picture</b></label>
+<input  id="pic" type="file" name=""  class="form-control"  placeholder="Enter here">
+</div>
+<div class="form-group">	
+<label><b>Your Address</b></label>
+<textarea id="address" class="form-control"  placeholder= " Enter here ">
+	
+</textarea>
+
+</div>
+<div class="form-group">	
+<label><b>About Your Self</b></label>
+<textarea id="self"  class="form-control "  placeholder="Enter here">
+	
+</textarea>
+
+</div>
+
+<div class="form-group">
+	<h4 class="mt-2">Important Link</h4>
+	<label  class="mt-2"><b>Facebook</b></label>
+	<input id="fb" type="text" name="" class="form-control" placeholder="Enter here">
+
+	<label class="mt-2"><b>Github</b></label>
+	<input  id="git"type="text" name="" class="form-control" placeholder="Enter here">
+
+	<label class="mt-2"><b>Linkedin</b></label>
+	<input id="link" type="text" name="" class="form-control" placeholder="Enter here">
+
+</div>
+
+
+
+
+
+	</div>
+
+	<div class="col-md-6">
+		<h2       data-aos="slide-left">Professional Info...</h2>
+		<div class="form-group"  id="wk" >
+			<label><b>Work Experience</b></label>
+			<textarea class="form-control  cv-wk" placeholder="Enter here" ></textarea>
+                	<!---- add text here---->
+
+			<div class="container text-center mt-3 " id="wk-btn">
+			<button    onclick="loadwk();"class="btn btn-info "    >Add</button>
+		</div>
+
+		</div>
+	
+
+		
+		<div class="form-group"  id="pk">
+			<label><b>Project</b></label>
+			<textarea  class="form-control cv-pk" placeholder="Enter here"></textarea>
+                 
+<!---- add text here---->
+			<div class="container text-center mt-3 " id="pk-btn" >
+			<button   onclick="loadpk();" class="btn btn-info "  id="btn">Add</button>
+		</div>
+
+
+			
+		</div>
+		
+
+		
+
+		<div class="form-group"  id="tk">
+			<label><b>Technical Skill</b></label>
+			<textarea  class="form-control cv-tk" placeholder="Enter here"></textarea>
+
+			<div class="container text-center mt-3" id="tk-btn" >
+			<button    onclick="loadtk();"class="btn btn-info "  id="btn">Add</button>
+		</div>
+		</div>
+		<!---- add text here---->
+
+		
+
+		<div class="form-group"  id="ak">
+			<label><b>Acedemic Qualiication</b></label>
+			<textarea  class="form-control cv-ak " placeholder="Enter here"></textarea>
+<!---- add text here---->
+			<div class="container text-center mt-3 " id="ak-btn" >
+			<button    onclick="loadak();"class="btn btn-info "  id="btn">Add</button>
+		</div>
+
+		</div>
+	</div>	
+
+	<div class="container">
+  	<button onclick= " grnerate();"  class="btn btn-info"  id="cv-btn">CV Generate</button>
+  </div>
+  </div>	
+
+  
+</div>
+
+<!-- code here for Resume Template -->
+<div class="container"  id="tp-form">
+	<div class="row">
+		<div class="col-md-4"  id="left-part">
+		<img src="C:\Users\Rahul Computer\Downloads\bus.png" class="img-fluid" id="tp-pic" ><br>
+      
+          <i class="fas fa-mobile-alt" id="mobile"></i>
+         <p id="tp-phone" class="text-center">+972042758</p>
+         <i class="fas fa-envelope" id="message"></i>
+         <p id="tp-email" class="text-center">mdarish@gmail.com</p>
+  <i class="fas fa-house-damage"  id="message"></i>
+         <p id="tp-address" class="text-center">Jama Masjid Road </p><br><br>
+              <i class="fab fa-facebook"  id="message"></i>
+         <a id="tp-fb" href=""  mt-2>https://facebook.com</a><br>
+
+         <i class="fab fa-linkedin mt-2 "   id="message"  ></i><br>
+         <a id="tp-link"href="">  https://Linkdinarish.co</a> <br>
+
+         <i  class="fab fa-github mt-2"  id="message" ></i><br>
+         <a   id="tp-git"href="">http://mdarish120.co</a> 
+
+		
+
+	</div>
+	<div class="col-md-8" id = "right-part"  >      
+		<div  class="card-body">
+				<h2  id="tp-name" class="text-center mt-3">Mohd Arish </h2>
+	<h5 class="text-center mt-2 " id="tp-post">Web Designer</h5><hr>
+	<p id="tp-self" class="text-center mt-2  "> My Self Mohd Arish I am my Inter from Anglo Vedic Senior SEcondary School</p>
+</div>
+	<!-- Work Experience -->
+      <div class="card">
+      	<div class="card-header  text-center"  id="ww">    
+      		<h3>  Work Experience</h3>
+      		
+      	</div>
+      	<div class="card-body">
+      		<ul id="tp-wk">
+      			<li>aaaaaaa</li>
+      			<li>sssssssssss</li>
+      			<li>eeeeeeeeeeeee</li>
+      			<li>sssssccccvv</li>
+
+      		</ul>
+      		
+      	</div>
+      </div>
+      <!-- Project -->
+      <div class="card ">
+      	<div class="card-header  text-center"  id="ww">    
+      		<h3> Projects</h3>
+      		
+      	</div>
+      	<div class="card-body">
+      		<ul id="tp-pk">
+      			<li>aaaaaaa</li>
+      			<li>sssssssssss</li>
+      			<li>eeeeeeeeeeeee</li>
+      			<li>sssssccccvv</li>
+
+      		</ul>
+      		
+      	</div>
+      </div>
+
+      <!-- Technical Skill -->
+      <div class="card">
+      	<div class="card-header  text-center"  id="ww">    
+      		<h3>  Skills</h3>
+      		
+      	</div>
+      	<div class="card-body">
+      		<ul id="tp-tk">
+      			<li>aaaaaaa</li>
+      			<li>sssssssssss</li>
+      			<li>eeeeeeeeeeeee</li>
+      			<li>sssssccccvv</li>
+
+      		</ul>
+      		
+      	</div>
+      </div>
+
+      <!-- Acadmeci Qualification -->
+      <div class="card ">
+      	<div class="card-header  text-center"  id="ww">    
+      		<h3> Acadmeic Qualiication</h3>
+      		
+      	</div>
+      	<div class="card-body">
+      		<ul id="tp-ak">
+      			<li>aaaaaaa</li>
+      			<li>sssssssssss</li>
+      			<li>eeeeeeeeeeeee</li>
+      			<li>sssssccccvv</li>
+
+      		</ul>
+      		
+      	</div>
+      </div>
+	<!-- end -->
+
+	</div>
+
+
+</div>
+<div class="container">
+	<button onclick="printcv();" class="text-center" id="tp-btn">Print CV</button>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ 
+<script src="Resume.js"></script>
+ <script>
+    AOS.init( {duration: 1500});
+  </script>
+</body>
+</html>
